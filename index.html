@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Website SAC Fixer</title>
+<link rel="stylesheet" href="style.css">
+
+<!-- Google API -->
+<script src="https://apis.google.com/js/api.js" onload="gapiLoaded()"></script>
+<script src="https://accounts.google.com/gsi/client" async defer></script>
+</head>
+<body>
+
+<!-- Intro -->
+<div id="intro-screen" class="screen">
+    <img src="Imagenes/bienvenida.jpg" class="background" alt="Bienvenida">
+    <img src="Imagenes/Fer.jpg" id="fer-icon" alt="Fer">
+</div>
+
+<!-- Login -->
+<div id="login-screen" class="screen hidden">
+    <img src="Imagenes/Fondo login.png" class="background" alt="Fondo login">
+    <div class="login-container">
+        <h1>WEBSITE SAC FIXER</h1>
+        <img src="Imagenes/icono login.jpg" class="login-icon" alt="Icono Login">
+        <input type="text" id="username" placeholder="Usuario">
+        <input type="password" id="password" placeholder="Contraseña">
+        <button id="login-btn">Iniciar sesión</button>
+        <button id="test-conn-btn">Probar conexión</button>
+        <div id="login-message"></div>
+    </div>
+</div>
+
+<!-- Main -->
+<div id="main-screen" class="screen hidden">
+    <img src="Imagenes/Fondo website.jpg" class="background" alt="Fondo Website">
+    <h1 class="main-title">WEBSITE SAC FIXER</h1>
+    <div class="menu-icons">
+        <div class="menu-item"><img src="Imagenes/botones.jpg"><p>RECOLECCIONES</p></div>
+        <div class="menu-item"><img src="Imagenes/botones.jpg"><p>REPUESTOS</p></div>
+        <div class="menu-item"><img src="Imagenes/botones.jpg"><p>ORDENES</p></div>
+        <div class="menu-item"><img src="Imagenes/botones.jpg"><p>ASISTENCIA</p></div>
+        <div class="menu-item"><img src="Imagenes/botones.jpg"><p>ADMINISTRATIVA</p></div>
+        <div class="menu-item"><img src="Imagenes/botones.jpg"><p>NOTICIAS</p></div>
+    </div>
+    <footer>
+        <a href="https://furiustools.com"><img src="Imagenes/Furius.jpg" alt="Furius"></a>
+        <a href="https://elitetools.co"><img src="Imagenes/fotter elite.jpg" alt="Elite Tools"></a>
+        <a href="https://accessmatic.com"><img src="Imagenes/footer accesmatic.jpg" alt="Accessmatic"></a>
+        <a href="https://sweissweld.com"><img src="Imagenes/footer sweiss.png" alt="Sweiss"></a>
+        <a href="https://ducsonpower.com"><img src="Imagenes/footer ducson.png" alt="Ducson"></a>
+        <a href="https://siefkentools.com"><img src="Imagenes/footer siefken.jpg" alt="Siefken"></a>
+    </footer>
+    <div id="user-name"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
